@@ -140,7 +140,7 @@ export default {
             titre: "The Truman Show",
             date: "1493",
             langue: "Anglais, Français",
-            real: "Charles Gilou",
+            real: "[\"Charles Gilou\", \"Français\", \"09/08/1451\"]",
             genre: "Drame, Fantasy",
             synopsis: "C'est un film sur un mec qui s'apppelle Truman.",
             displayInfo: false
@@ -149,7 +149,7 @@ export default {
             titre: "Jumanji",
             date: "1938",
             langue: "Français",
-            real: "Benoit Drevel",
+            real: "[\"Benoit Drevel\", \"Français\", \"29/02/1892\"]",
             genre: "Fantasy, Action",
             synopsis: "C'est un film sur un jeu de plateau avec des règles qui changent à chaque fois qu'on l'utilise.",
             displayInfo: false
@@ -157,8 +157,8 @@ export default {
         {
             titre: "Mickey Mouse et ses srabs dans le tié-quar",
             date: "2020",
-            langue: "Français",
-            real: "Walt Disney (revenu des morts)",
+            langue: "Anglais, Français",
+            real: "[\"Walt Disney (revenu des morts)\", \"Américain\", \"05/12/1901\"]",
             genre: "Comédie, Drame",
             synopsis: "C'est un film sur l'acceptation de soi et l'entraide des amis.",
             displayInfo: false
@@ -203,9 +203,11 @@ export default {
                     titre: this.movieName,
                     date: this.movieDate,
                     langue: this.movieLangue,
-                    real: [this.movieRealName,
-                            this.movieRealNation,
-                            this.movieRealDate],
+                    real: [
+                        this.movieRealName,
+                        this.movieRealNation,
+                        this.movieRealDate
+                    ],
                     genre: this.movieGenre,
                     synopsis: this.movieSynopsis,
                     displayInfo: false
