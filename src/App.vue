@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/Mickey-Mouse.jpg">
-    <h1>Bienvenu sur mon site de films.</h1>
+    <v-app>
+      <div class="image">
+        <img alt="Vue logo" src="./assets/Mickey-Mouse.jpg" height="613px" width="562px">
+      </div>
+      <h1>Bienvenue sur mon site de films.</h1>
     <MovieList msg="Welcome to Your Vue.js App"/>
+    </v-app>
   </div>
 </template>
 
@@ -18,6 +22,11 @@ export default {
 </script>
 
 <style>
+.image {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
